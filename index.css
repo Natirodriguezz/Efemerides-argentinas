@@ -88,13 +88,15 @@ header {
 
 .parent div {
     overflow: hidden;
+    position: relative;
+    border-radius: 5px;
 }
 
 .parent div img {
     transition: all 0.4s ease;
 }
 
-.parent div img:hover {
+.parent div:hover img {
     transform: scale(1.05);
     filter: saturate(1.5);
     cursor: pointer;
@@ -160,4 +162,27 @@ h1, h2, h3, h4, h5, .card-title {
 
 .hero p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.capa-texto {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    
+    opacity: 0; 
+    transform: translateY(100%); 
+    transition: all 0.4s ease; 
+    pointer-events: none; 
+}
+
+.parent div:hover .capa-texto {
+    opacity: 1; 
+    transform: translateY(0); 
 }
