@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efemérides Argentinas</title>   
+    <link href=<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Carrois+Gothic+SC&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Oswald:wght@200..700&family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="fixed-top"> <nav class="container-fluid d-flex justify-content-between align-items-center">
+        <a href="index.html">
+            <img class="Logo" src="img/Bandera Argentina.png" alt="Bandera de Argentina">
+        </a>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-dark" href="#home">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#nosotros">Especiales</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#galeria">Imágenes</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero d-flex align-items-center justify-content-center">
+        <div class="text-center text-white">
+            <h1 class="display-3">Efemérides Argentinas</h1>
+            <p class="lead">Un recorrido por nuestra historia mes a mes</p>
+        </div>
+    </section>
+
+    <section id="nosotros" class="container py-5">
+        <h2 class="text-center mb-4">Destacados de Abril</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/Dia de Veteranos y caidos en guerra en Malvinas.jpg" class="card-img-top" alt="Malvinas">
+                <div class="card-body">
+                    <h5 class="card-title">2 de Abril</h5>
+                    <p class="card-text">Día del Veterano y de los Caídos en la Guerra de Malvinas.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Dia de la ciencia y la tecnologia.jpg" class="card-img-top" alt="Ciencia">
+                <div class="card-body">
+                    <h5 class="card-title">10 de Abril</h5>
+                    <p class="card-text">Día de la Ciencia y la Tecnología en honor a Bernardo Houssay</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-5 bg-light">
+        <h2 class="text-center mb-4">Galeria de Efemerides del mes de Abril</h2>
+        <div class="parent">
+            <div class="div1"><img src="img/dia del autismo.webp" class="img-fluid" alt="Dia de concientizacio sobre el autismo"></div>
+            <div class="div2"><img src="img/Fundacion Boca Juniors.png" class="img-fluid" alt="Fundacion de Boca Juniors"></div>
+            <div class="div3"><img src="img/fiesta del chocolate.jpg" class="img-fluid" alt="Fiesta Nacional del chocolate"></div>
+            <div class="div4"><img src="img/dia del indio americano.jpeg" class="img-fluid" alt="Día del Índio Americano"></div>
+            <div class="div5"><img src="img/lealtad contra la proscripcion.jpeg" class="img-fluid" alt="Lealtad contra la proscripción de CFK"></div>
+            <div class="div6"><img src="img/Trenquen Launquen.png" class="img-fluid" alt="Fundacion de Trenquen Launquen"></div>
+            <div class="div7"><img src="img/Irigoyen gana las elecciones.jpg" class="img-fluid" alt="Irigoyen gana las elecciones"></div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container py-5">
+        <h2 class="text-center mb-4">Queres ser parte de nuestra comunidad</h2>
+        <form class="col-md-8 mx-auto">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" class="form-control" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="mail@ejemplo.com" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Teléfono</label>
+                <input type="tel" class="form-control" placeholder="Número de contacto">
+            </div>
+            <div class="form-group">
+                <label>Tipo de Efeméride</label>
+                <select class="form-control"> <option>Histórica</option>
+                    <option>Cultural</option>
+                    <option>Salud y Ciencia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Comentario</label> <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="check"> <label class="form-check-label" for="check">Deseo recibir novedades</label>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button> <button type="reset" class="btn btn-secondary">Limpiar</button> </form>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2026 Efemérides Argentina</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
